@@ -14,9 +14,7 @@ from rich.text import Text
 from rich.style import Style
 from cpmrst import cpmrst
 
-__CHANNEL_USERNAME__ = "Roasted2001"
-__GROUP_USERNAME__   = "0983544223"
-__YOUTUBE__ = "roasted_2001"
+__CHANNEL_USERNAME__ = "henryng200"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -56,8 +54,6 @@ def banner(console):
     console.print(colorful_text)
     console.print("[bold green]♕ CPKVN[/bold green][bold purple]: Car Parking Multiplayer Hacking Tool.[/bold purple]")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
-    console.print(f"[bold green]♕ Zalo[/bold green]: [bold blue]{__GROUP_USERNAME__}[/bold blue].")
-    console.print(f"[bold green]♕ Youtube[/bold green]: [bold blue]@{__YOUTUBE__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
@@ -81,8 +77,8 @@ def load_player_data(cpm):
 def load_key_data(cpm):
     data = cpm.get_key_data()
     console.print("[bold][red]========[/red][blue][ MOD MENU TABLE ][/blue][red]========[/red][/bold]")
-    console.print("[bold green]Chat me:[/bold green][bold red] https://m.me/thanhtung0701[/bold red]")
-    console.print(f"[bold green]Credits    [/bold green]: [bold yellow]{ (data.get('coins') if not data.get('is_unlimited') else 'ROASTED_AMONYMOUS') }[/bold yellow].", end="\n\n")
+    console.print("[bold green]facebook:[/bold green][bold red] Nguyễn Bạch Phước Thịnh[/bold red]")
+    console.print(f"[bold green]Credits    [/bold green]: [bold yellow]{ (data.get('coins') if not data.get('is_unlimited') else 'Phước Thịnh') }[/bold yellow].", end="\n\n")
 
 def prompt_valid_value(content, tag, password=False):
     while True:
